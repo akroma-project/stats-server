@@ -1,2 +1,2 @@
-var networkName = 'Ethereum';
+var networkName = 'Akroma';
 var faviconPath = '/favicon.ico';
