@@ -4,7 +4,7 @@ RUN git clone --depth 1 https://github.com/akroma-project/stats-server.git /stat
 WORKDIR /stats-server
 RUN npm install
 RUN npm install -g grunt-cli
-RUN grunt pow
+RUN npm run dist -- pow
 
 EXPOSE 80 
 EXPOSE 443
