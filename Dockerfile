@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 RUN npm install -g grunt-cli
-RUN grunt pow
+RUN npm run dist -- pow
 COPY . .
 
 EXPOSE 443
